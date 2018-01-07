@@ -12,7 +12,7 @@ Method | URL | Description
 --- | --- | ---
 **[GET](/documentation/endpoint/schedule_trade#get-all-of-your-current-schedule)** | `schedule-trade` | GET ALL OF YOUR CURRENT SCHEDULE
 **[PUT](/documentation/endpoint/schedule_trade#update-your-schedule)** | `schedule_trade_update` | UPDATE YOUR SCHEDULE
-**[POST](/documentation/endpoint/schedule_trade#insert-new-schedule)** | `monitor` | INSERT NEW Schedule
+**[POST](/documentation/endpoint/schedule_trade#insert-new-schedule)** | `schedule-trade` | INSERT NEW Schedule
 
 ### Object Attributes
 
@@ -57,30 +57,13 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 15:05:03 GMT
+Date: Sun, 07 Jan 2018 15:06:34 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 [
-    {
-        "budget": 1000.0, 
-        "business_id": 5, 
-        "buy_angle": 15.0, 
-        "buy_angle_hold": -50.0, 
-        "buy_angle_xa": -50.0, 
-        "buy_executed_id": null, 
-        "buy_price": 13.0, 
-        "created": "2018-01-07T15:03:53.290623", 
-        "id": 4, 
-        "sell_angle": 15.0, 
-        "sell_angle_hold": 50.0, 
-        "sell_executed_id": null, 
-        "sell_price": 13.5, 
-        "symbol": "AMD", 
-        "type": "calls"
-    }, 
     {
         "budget": 1000.0, 
         "business_id": 5, 
@@ -145,7 +128,7 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 15:05:04 GMT
+Date: Sun, 07 Jan 2018 15:06:34 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -173,13 +156,13 @@ Vary: Origin
 
 INSERT NEW Schedule
 ------
-<code request-method="POST">**POST** monitor</code>
+<code request-method="POST">**POST** schedule-trade</code>
 
 You can insert new stock or COIN to monitor
 
 ### Example
 ```http
-POST http://localhost:6789/monitor
+POST http://localhost:6789/schedule-trade
 Authorization: Basic YW5kcmVpOmFuZHJlaTEyMzQ1IQ==
 Content-Length: 270
 Content-Type: application/json
@@ -202,7 +185,7 @@ Origin: http://localhost:6789
 ```
 
 ```http
-HTTP/1.1 400 Bad Request
+HTTP/1.1 200 Ok
 Access-Control-Allow-Credentials: true
 Access-Control-Allow-Headers: Suppress-WWW-Authenticate, Content-Type, Authorization, Vary
 Access-Control-Allow-Methods: GET, PUT, POST, DELETE, HEAD, OPTIONS
@@ -210,16 +193,28 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 15:05:04 GMT
+Date: Sun, 07 Jan 2018 15:06:35 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
 {
-    "attribute": "buy_angle_xa", 
-    "error_info": null, 
-    "type_error": "AttributeError"
+    "budget": 1000.0, 
+    "business_id": 5, 
+    "buy_angle": 15.0, 
+    "buy_angle_hold": -50.0, 
+    "buy_angle_xa": -50.0, 
+    "buy_executed_id": null, 
+    "buy_price": 13.0, 
+    "created": "2018-01-07T15:06:35.323591", 
+    "id": 5, 
+    "sell_angle": 15.0, 
+    "sell_angle_hold": 50.0, 
+    "sell_executed_id": null, 
+    "sell_price": 13.5, 
+    "symbol": "AMD", 
+    "type": "calls"
 }
 ```
 
