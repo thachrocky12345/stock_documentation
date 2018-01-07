@@ -57,13 +57,48 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 14:59:31 GMT
+Date: Sun, 07 Jan 2018 15:05:03 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
 Vary: Origin
 
-[]
+[
+    {
+        "budget": 1000.0, 
+        "business_id": 5, 
+        "buy_angle": 15.0, 
+        "buy_angle_hold": -50.0, 
+        "buy_angle_xa": -50.0, 
+        "buy_executed_id": null, 
+        "buy_price": 13.0, 
+        "created": "2018-01-07T15:03:53.290623", 
+        "id": 4, 
+        "sell_angle": 15.0, 
+        "sell_angle_hold": 50.0, 
+        "sell_executed_id": null, 
+        "sell_price": 13.5, 
+        "symbol": "AMD", 
+        "type": "calls"
+    }, 
+    {
+        "budget": 1000.0, 
+        "business_id": 5, 
+        "buy_angle": 15.0, 
+        "buy_angle_hold": -50.0, 
+        "buy_angle_xa": -50.0, 
+        "buy_executed_id": null, 
+        "buy_price": 13.0, 
+        "created": "2018-01-07T15:03:29.272396", 
+        "id": 3, 
+        "sell_angle": 15.0, 
+        "sell_angle_hold": 50.0, 
+        "sell_executed_id": null, 
+        "sell_price": 13.5, 
+        "symbol": "AMD", 
+        "type": "calls"
+    }
+]
 ```
 
 
@@ -91,7 +126,7 @@ Origin: http://localhost:6789
     "buy_executed_id": null, 
     "buy_price": 13, 
     "created": "2018-01-07T14:47:07.754055", 
-    "id": 2, 
+    "id": 4, 
     "sell_angle": 15, 
     "sell_angle_hold": 50, 
     "sell_executed_id": null, 
@@ -110,7 +145,7 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 14:59:32 GMT
+Date: Sun, 07 Jan 2018 15:05:04 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
@@ -125,7 +160,7 @@ Vary: Origin
     "buy_executed_id": null, 
     "buy_price": 13.0, 
     "created": "2018-01-07T14:47:07.754055", 
-    "id": 2, 
+    "id": 4, 
     "sell_angle": 15.0, 
     "sell_angle_hold": 50.0, 
     "sell_executed_id": null, 
@@ -175,7 +210,7 @@ Access-Control-Allow-Origin: http://localhost:6789
 Access-Control-Max-Age: 3600
 Cache-Control: no-store, must-revalidate
 Content-Type: application/json
-Date: Sun, 07 Jan 2018 14:59:32 GMT
+Date: Sun, 07 Jan 2018 15:05:04 GMT
 Expires: 0
 Server: TwistedWeb/17.1.0
 Transfer-Encoding: chunked
